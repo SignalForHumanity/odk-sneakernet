@@ -1,0 +1,13 @@
+[package]
+description = "Inventory ODK Collect submissions copied off phones, upload them to ODK Central, or export CSV"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/SignalForHumanity/odk-sneakernet"
+readme = "README.md"
+name = "odk-sneakernet"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+roxmltree = "0.21"
+rusqlite = { version = "0.40", features = ["bundled"] }
+ureq = { version = "3", default-features = false, features = ["rustls"] }
